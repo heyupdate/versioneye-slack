@@ -1,0 +1,22 @@
+{
+    "name": "heyupdate/versioneye-slack",
+    "description": "Post recent notificiations from VersionEye to Slack",
+    "keywords": ["versioneye", "slack", "package", "notifications"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4",
+        "guzzlehttp/guzzle": "~5.0",
+        "symfony/console": "~2.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "HeyUpdate": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "bin": ["bin/versioneye-slack"]
+}
