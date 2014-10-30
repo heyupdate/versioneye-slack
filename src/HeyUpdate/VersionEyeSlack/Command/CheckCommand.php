@@ -56,7 +56,7 @@ class CheckCommand extends Command
                     'payload' => json_encode([
                         'channel' => '#general',
                         'username' => 'VersionEye',
-                        'icon_url' => 'https://pbs.twimg.com/profile_images/476315273247485952/ZnbAxqnh.png',
+                        'icon_url' => 'https://raw.githubusercontent.com/heyupdate/versioneye-slack/gh-pages/versioneye.png',
                         'text' => 'There are new releases out there!',
                         'attachments' => $attachments
                     ])
