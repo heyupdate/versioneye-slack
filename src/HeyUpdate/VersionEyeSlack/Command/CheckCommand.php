@@ -40,10 +40,10 @@ class CheckCommand extends Command
 
         // Build slack attachments
         $attachments = array();
-        $lastNotificationDate = new \DateTime($config['last_notificiation']);
+        $lastNotificationDate = isset($config['last_notificiation']) ? new \DateTime($config['last_notificiation']) : null;
         foreach ($result->notifications as $notification) {
             $notificiationDate = new \DateTime((string) $notification->created_at);
-            if (!isset($config['last_notificiation']) || $lastNotificationDate < $notificiationDate) {
+            if (!isset($lastNotificationDate) || $lastNotificationDate < $notificiationDate) {
                 $attachments[] = [
                     'text' => sprintf('%s (%s)', $notification->product->name, $notification->version)
                 ];
