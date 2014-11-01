@@ -2,6 +2,8 @@
 
 Post your latest VersionEye notifications to Slack.
 
+![Screenshot](https://raw.githubusercontent.com/heyupdate/versioneye-slack/gh-pages/screenshot.png)
+
 ## Installation
 
 There are two ways to install; using Composer or downloading a Phar binary.
