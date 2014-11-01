@@ -46,6 +46,8 @@ You can post to any channel by passing it as an option (it will default to `#gen
 
     versioneye-slack --versioneye-key={key} --slack-webhook={webhook} --slack-channel=#general
 
+Add a cron job to run it as often as you want to recieve updates.
+
 ## Help
 
 Get help by running:
